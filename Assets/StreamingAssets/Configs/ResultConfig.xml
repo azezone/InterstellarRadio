@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ResultConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <videos>
+    <VideoItem name="测试视频" url="http://ba5597ecee6f5.cdn.sohucs.com/1470375110.m3u8" />
+    <VideoItem name="测试视频" url="http://html5demos.com/assets/dizzy.mp4" />
+  </videos>
+  
+  <images>
+    <ImageItem name="测试图片" url="http://pic4.nipic.com/20091217/3885730_124701000519_2.jpg" />
+  </images>
+  
+  <lables>
+    <LableItem name="测试文字" content = "测试蚊子蚊子测试蚊子蚊子测试蚊子蚊子测试蚊子蚊子" />
+  </lables>
+</ResultConfig>
