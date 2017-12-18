@@ -22,14 +22,15 @@ public class VideoPage : ResultPageBase
 
         Show();
 
-        if (string.IsNullOrEmpty(_VideoPlayer.m_strFileName))
-        {
-            _VideoPlayer.m_strFileName = data.url;
-        }
-        else
-        {
-            _VideoPlayer.Load(data.url);
-        }
+        //if (string.IsNullOrEmpty(_VideoPlayer.m_strFileName))
+        //{
+        //    _VideoPlayer.m_strFileName = data.url;
+        //}
+        //else
+        //{
+        //    _VideoPlayer.Load(data.url);
+        //}
+        _VideoPlayer.m_strFileName = data.url;
         _VideoPlayer.Play();
 
         _VideoPlayer.OnEnd += () =>

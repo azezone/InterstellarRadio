@@ -15,6 +15,31 @@ public class PanelComputer : MonoBehaviour
     {
         InitButtons();
         //InitInterfaceAnimManagers();
+
+        //Ftimer.AddEvent("autostartmovie",2f,()=> {
+        //    OprateButtonEvent("Movie");
+        //});
+
+        //Ftimer.AddEvent("autostartui", 8f, () => {
+        //    OprateButtonEvent("Image");
+        //});
+    }
+
+    bool flag = false;
+    private void Update()
+    {
+        if (Input.anyKeyDown)
+        {
+            if (flag)
+            {
+                OprateButtonEvent("Movie");
+            }
+            else
+            {
+                OprateButtonEvent("Image");
+            }
+            flag = !flag;
+        }
     }
 
     private void InitButtons()
